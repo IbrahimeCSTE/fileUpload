@@ -5,8 +5,6 @@ const AvatarModel=require("../model/AvatarModel")
 
 
 router.post('/', upload.single('file'), async (req, res) => {
-    console.log(`POST request upload avatar ${req.file.originalname}`);
-    console.log(req.file)
 
     const newAvatar = req.file;
 
